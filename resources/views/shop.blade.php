@@ -231,10 +231,10 @@
                             <div class="book-content">
                                 <h3>{{ $p->name }}</h3>
                                 @if (!empty($p->link))
-                                    <a href="{{ $p->link }}" target="_blank"><button type="button">Buy
-                                            Now</button></a>
+                                    <a href="{{ $p->link }}" target="_blank"><button type="button">Buy From
+                                            Amazon</button></a>
                                 @else
-                                    <button type="button">Buy Now</button>
+                                    <button type="button">Buy From Amazon</button>
                                 @endif
                             </div>
                         </div>

@@ -63,7 +63,7 @@
                                 });
                             });
                         </script>
-                        <p class="footer-policy">By signing up you agree with our <a href="#">Privacy Policy.</a>
+                        <p class="footer-policy">By signing up you agree with our <a href="{{route('privacy_policy')}}">Privacy Policy.</a>
                         </p>
                     </div>
                     <div class="footer-social">

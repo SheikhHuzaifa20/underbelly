@@ -105,9 +105,9 @@
                             <div class="book-content">
                                 <h3>{{ $p->name }}</h3>
                                 @if(!empty($p->link))
-                                    <a href="{{ $p->link }}" target="_blank"><button type="button">Buy Now</button></a>
+                                    <a href="{{ $p->link }}" target="_blank"><button type="button">Buy From Amazon</button></a>
                                 @else
-                                    <button type="button">Buy Now</button>
+                                    <button type="button">Buy From Amazon</button>
                                 @endif
                             </div>
                         </div>
@@ -159,9 +159,9 @@
                                 <h2>{{ $p->name }}</h2>
                                 <p>{!! $p->description !!}</p>
                                 @if(!empty($p->link))
-                                    <a href="{{ $p->link }}" target="_blank"><button class="explore-button" type="button">Explore More</button></a>
+                                    <a href="{{ $p->link }}" target="_blank"><button class="explore-button" type="button">Buy From Amazon</button></a>
                                 @else
-                                    <button class="explore-button" type="button">Explore More</button>
+                                    <button class="explore-button" type="button">Buy From Amazon</button>
                                 @endif
                             </div>
                         </div>

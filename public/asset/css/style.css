@@ -286,7 +286,8 @@ section.about {
 .book-content {
     color: var(--white);
     font-family: "Manrope", sans-serif;
-    text-align: start;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .book-card img {
