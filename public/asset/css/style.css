@@ -1356,3 +1356,7 @@ button.btn.btn-primary {
 .owl-carousel.owl-theme.books-slider.owl-loaded.owl-drag .owl-nav button {
     background: transparent !important;
 }
+
+.book-content h3 {
+    height: 85px;
+}
