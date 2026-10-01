@@ -88,9 +88,13 @@ class HomeController extends Controller
         return view('blog_detail', compact('blog', 'cat'));
     }
 
-    public function shop()
+    public function shop(Request $request)
     {
-        $products = \App\Models\Product::with(['images', 'primaryImage', 'galleryImages'])->where('status', 1)->get();
+        $query = \App\Models\Product::with(['images', 'primaryImage', 'galleryImages'])->where('status', 1);
+        if ($request->has('q') && $request->q != '') {
+            $query->where('name', 'like', '%' . $request->q . '%');
+        }
+        $products = $query->get();
         return view('shop', compact('products'));
     }
 

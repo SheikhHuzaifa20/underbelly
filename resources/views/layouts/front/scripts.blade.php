@@ -48,8 +48,9 @@
            MAIN BOOKS SLIDER
         ========================================= */
 
+        var booksItemCount = $('.books-slider .item').length;
         $('.books-slider').owlCarousel({
-            loop: true,
+            loop: booksItemCount > 3 ? true : false,
             margin: 30,
             nav: true,
             dots: false,
@@ -79,8 +80,9 @@
            BOOKS SLIDER 1
         ========================================= */
 
+        var booksItemCount1 = $('.books-slider1 .item').length;
         $('.books-slider1').owlCarousel({
-            loop: true,
+            loop: booksItemCount1 > 2 ? true : false,
             margin: 30,
             nav: true,
             dots: true,
@@ -103,8 +105,9 @@
            TESTIMONIAL SLIDER
         ========================================= */
 
+        var testimonialCount = $('.testinomial-slider .item').length;
         $('.testinomial-slider').owlCarousel({
-            loop: true,
+            loop: testimonialCount > 4 ? true : false,
             margin: 22,
             nav: false,
             dots: false,

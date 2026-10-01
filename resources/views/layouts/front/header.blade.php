@@ -23,10 +23,28 @@
                             <a href="{{ route('blog') }}">Blog</a>
                             <!--<a href="contact.php">Contact Us</a>-->
                         </nav>
-                        <div class="icons">
-                            {{-- <a href="#">
-                                    <img class="header-icon" src="{{asset('asset/images/search-icon.png')}}" alt="">
-                                </a> --}}
+                        <div class="icons" style="display: flex; align-items: center;">
+                            <form action="{{ route('book.shop') }}" method="GET" id="searchForm" style="display: flex; align-items: center; margin-bottom: 0;">
+                                <input type="text" name="q" id="searchInput" placeholder="Search products..." style="display: none; padding: 5px 10px; border-radius: 20px; border: 1px solid #ccc; outline: none; margin-right: 10px; background: transparent; color: #fff;">
+                                <a href="javascript:void(0)" onclick="toggleSearch()">
+                                    <img class="header-icon" src="{{asset('asset/images/search-icon.png')}}" alt="Search">
+                                </a>
+                            </form>
+                            <script>
+                                function toggleSearch() {
+                                    var input = document.getElementById('searchInput');
+                                    if (input.style.display === 'none' || input.style.display === '') {
+                                        input.style.display = 'block';
+                                        input.focus();
+                                    } else {
+                                        if (input.value.trim() !== '') {
+                                            document.getElementById('searchForm').submit();
+                                        } else {
+                                            input.style.display = 'none';
+                                        }
+                                    }
+                                }
+                            </script>
                             {{-- <a href="#">
                                     <img class="header-icon" src="{{asset('asset/images/cart-img.png')}}" alt="">
                                 </a> --}}
