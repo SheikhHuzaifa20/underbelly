@@ -177,6 +177,7 @@
                     </div>
                 </div> --}}
 
+                @if($products->count() > 0)
                 <div class="owl-carousel owl-theme books-slider">
                     @foreach ($products as $p)
                         @php
@@ -352,6 +353,12 @@
                     <!--    </div>-->
                     <!--</div>-->
                 </div>
+                @else
+                <div class="col-lg-12 text-center" style="padding: 50px 0;">
+                    <h3 style="color: #fff;">Product Not Found</h3>
+                    <p style="color: #ccc;">Sorry, we couldn't find any product matching your search.</p>
+                </div>
+                @endif
             </div>
         </div>
         </div>
