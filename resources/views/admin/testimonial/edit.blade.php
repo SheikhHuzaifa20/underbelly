@@ -57,6 +57,12 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
+                                                <label for="link">Link (Optional)</label>
+                                                <input class="form-control" name="link" type="text" id="link" placeholder="https://example.com" value="{{ old('link', $testimonial->link) }}">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
                                                 <label for="rating">Rating</label>
                                                 <select name="rating" id="rating" class="form-control" required>
                                                     <option value="">-- Select Rating --</option>

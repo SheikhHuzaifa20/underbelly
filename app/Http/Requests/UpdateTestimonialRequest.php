@@ -18,6 +18,7 @@ class UpdateTestimonialRequest extends FormRequest
             'image' => 'nullable|mimes:jpeg,jpg,png,gif,webp|max:10000',
             'description' => 'nullable|string',
             'rating' => 'nullable|integer|min:1|max:5',
+            'link' => 'nullable|string|max:500',
         ];
     }
 }

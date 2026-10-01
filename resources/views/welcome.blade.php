@@ -54,63 +54,66 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="owl-carousel owl-theme books-slider">
-                        @foreach($product as $p)
-                        @php
-                            $allImages = collect();
-                            if ($p->primaryImage) {
-                                $allImages->push($p->primaryImage);
-                            }
-                            if ($p->galleryImages && $p->galleryImages->count() > 0) {
-                                foreach ($p->galleryImages as $gImg) {
-                                    $allImages->push($gImg);
+                        @foreach ($product as $p)
+                            @php
+                                $allImages = collect();
+                                if ($p->primaryImage) {
+                                    $allImages->push($p->primaryImage);
                                 }
-                            }
-                            if ($allImages->isEmpty() && isset($p->images) && count($p->images) > 0) {
-                                $allImages = collect($p->images);
-                            }
-                        @endphp
-                        <div class="item">
-                            <div class="book-card">
-                                <div class="swiper mySwiper2">
-                                    <div class="swiper-wrapper">
-                                        @if($allImages->count() > 0)
-                                            @foreach($allImages as $img)
+                                if ($p->galleryImages && $p->galleryImages->count() > 0) {
+                                    foreach ($p->galleryImages as $gImg) {
+                                        $allImages->push($gImg);
+                                    }
+                                }
+                                if ($allImages->isEmpty() && isset($p->images) && count($p->images) > 0) {
+                                    $allImages = collect($p->images);
+                                }
+                            @endphp
+                            <div class="item">
+                                <div class="book-card">
+                                    <div class="swiper mySwiper2">
+                                        <div class="swiper-wrapper">
+                                            @if ($allImages->count() > 0)
+                                                @foreach ($allImages as $img)
+                                                    <div class="swiper-slide">
+                                                        <img class="img-fluid" src="{{ asset($img->image_path) }}"
+                                                            alt="{{ $p->name }}" />
+                                                    </div>
+                                                @endforeach
+                                            @else
                                                 <div class="swiper-slide">
-                                                    <img class="img-fluid" src="{{ asset($img->image_path) }}" alt="{{ $p->name }}" />
+                                                    <img class="img-fluid" src="{{ asset('asset/images/book1.png') }}"
+                                                        alt="{{ $p->name }}" />
                                                 </div>
-                                            @endforeach
-                                        @else
-                                            <div class="swiper-slide">
-                                                <img class="img-fluid" src="{{ asset('asset/images/book1.png') }}" alt="{{ $p->name }}" />
-                                            </div>
-                                        @endif
+                                            @endif
+                                        </div>
                                     </div>
-                                </div>
-                                <div thumbsSlider="" class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        @if($allImages->count() > 0)
-                                            @foreach($allImages as $img)
+                                    <div thumbsSlider="" class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+                                            @if ($allImages->count() > 0)
+                                                @foreach ($allImages as $img)
+                                                    <div class="swiper-slide">
+                                                        <span class="dots-click"></span>
+                                                    </div>
+                                                @endforeach
+                                            @else
                                                 <div class="swiper-slide">
                                                     <span class="dots-click"></span>
                                                 </div>
-                                            @endforeach
-                                        @else
-                                            <div class="swiper-slide">
-                                                <span class="dots-click"></span>
-                                            </div>
-                                        @endif
+                                            @endif
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="book-content">
+                                    <h3>{{ $p->name }}</h3>
+                                    @if (!empty($p->link))
+                                        <a href="{{ $p->link }}" target="_blank"><button type="button">Buy From
+                                                Amazon</button></a>
+                                    @else
+                                        <button type="button">Comming Soon</button>
+                                    @endif
+                                </div>
                             </div>
-                            <div class="book-content">
-                                <h3>{{ $p->name }}</h3>
-                                @if(!empty($p->link))
-                                    <a href="{{ $p->link }}" target="_blank"><button type="button">Buy From Amazon</button></a>
-                                @else
-                                    <button type="button">Comming Soon</button>
-                                @endif
-                            </div>
-                        </div>
                         @endforeach
                     </div>
                 </div>
@@ -140,33 +143,35 @@
             </div>
             <div class="owl-carousel owl-theme books-slider1">
                 @foreach ($product as $p)
-                <div class="item">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="explore-main">
-                                <div class="explore-more-image">
-                                    <img class="img-fluid explore-background"
-                                        src="{{ asset('asset/images/explore_more.png') }}" alt="A quiet city walkway">
-                                </div>
-                                <div class="explore-more-book">
-                                    <img class="img-fluid" src="{{ $p->primaryImage && $p->primaryImage->image_path ? asset($p->primaryImage->image_path) : asset('asset/images/book1.png') }}"
-                                        alt="{{ $p->name }}">
+                    <div class="item">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="explore-main">
+                                    <div class="explore-more-image">
+                                        <img class="img-fluid explore-background"
+                                            src="{{ asset('asset/images/explore_more.png') }}" alt="A quiet city walkway">
+                                    </div>
+                                    <div class="explore-more-book">
+                                        <img class="img-fluid"
+                                            src="{{ $p->primaryImage && $p->primaryImage->image_path ? asset($p->primaryImage->image_path) : asset('asset/images/book1.png') }}"
+                                            alt="{{ $p->name }}">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-more-content" data-aos="fade-left" data-aos-duration="1500">
-                                <h2>{{ $p->name }}</h2>
-                                <p>{!! $p->description !!}</p>
-                                @if(!empty($p->link))
-                                    <a href="{{ $p->link }}" target="_blank"><button class="explore-button" type="button">Buy From Amazon</button></a>
-                                @else
-                                    <button class="explore-button" type="button">Comming Soon</button>
-                                @endif
+                            <div class="col-lg-6">
+                                <div class="explore-more-content" data-aos="fade-left" data-aos-duration="1500">
+                                    <h2>{{ $p->name }}</h2>
+                                    <p>{!! $p->description !!}</p>
+                                    @if (!empty($p->link))
+                                        <a href="{{ $p->link }}" target="_blank"><button class="explore-button"
+                                                type="button">Buy From Amazon</button></a>
+                                    @else
+                                        <button class="explore-button" type="button">Comming Soon</button>
+                                    @endif
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 @endforeach
             </div>
         </div>
@@ -211,23 +216,27 @@
                     <div class="owl-carousel owl-theme testinomial-slider">
                         @foreach ($testimonial as $t)
                             <div class="item">
-                                <div class="testinomial-card">
-                                    <h5 style="color: #ff754c;">
-                                        @for ($i = 0; $i < $t->rating; $i++)
-                                            <i class="fa-solid fa-star"></i>
-                                        @endfor
-                                    </h5>
-                                    {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
+                                <a
+                                    href="{{ !empty($t->link) ? $t->link : 'javascript:void(0)' }}" {!! !empty($t->link) ? 'target="_blank"' : '' !!}>
+                                    <div class="testinomial-card">
+                                        <h5 style="color: #ff754c;">
+                                            @for ($i = 0; $i < $t->rating; $i++)
+                                                <i class="fa-solid fa-star"></i>
+                                            @endfor
+                                        </h5>
+                                        {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
                                 alt="5 stars"> --}}
-                                    {!! $t->description !!}
-                                    <div class="testinomial-profile">
-                                        <img class="testinomial-avatar" src="{{ asset($t->image) }}" alt="Angela Moss">
-                                        <div class="testinomial-info">
-                                            <h6>{{ $t->title }}</h6>
-                                            <!--<p>Book Lovers</p>-->
+                                        {!! $t->description !!}
+                                        <div class="testinomial-profile">
+                                            <img class="testinomial-avatar" src="{{ asset($t->image) }}"
+                                                alt="Angela Moss">
+                                            <div class="testinomial-info">
+                                                <h6>{{ $t->title }}</h6>
+                                                <!--<p>Book Lovers</p>-->
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         @endforeach
                         {{-- <div class="item">

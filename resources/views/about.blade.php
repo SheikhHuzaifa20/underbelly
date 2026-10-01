@@ -84,23 +84,25 @@
                     <div class="owl-carousel owl-theme testinomial-slider">
                         @foreach ($testimonial as $t)
                             <div class="item">
-                                <div class="testinomial-card">
-                                    <h5 style="color: #ff754c;">
-                                        @for ($i = 0; $i < $t->rating; $i++)
-                                            <i class="fa-solid fa-star"></i>
-                                        @endfor
-                                    </h5>
-                                    {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                alt="5 stars"> --}}
-                                    {!! $t->description !!}
-                                    <div class="testinomial-profile">
-                                        <img class="testinomial-avatar" src="{{ asset($t->image) }}" alt="Angela Moss">
-                                        <div class="testinomial-info">
-                                            <h6>{{ $t->title }}</h6>
-                                            <!--<p>Book Lovers</p>-->
+                                <a href="{{ !empty($t->link) ? $t->link : 'javascript:void(0)' }}" {!! !empty($t->link) ? 'target="_blank"' : '' !!}>
+                                    <div class="testinomial-card">
+                                        <h5 style="color: #ff754c;">
+                                            @for ($i = 0; $i < $t->rating; $i++)
+                                                <i class="fa-solid fa-star"></i>
+                                            @endfor
+                                        </h5>
+                                        {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
+                                    alt="5 stars"> --}}
+                                        {!! $t->description !!}
+                                        <div class="testinomial-profile">
+                                            <img class="testinomial-avatar" src="{{ asset($t->image) }}" alt="Angela Moss">
+                                            <div class="testinomial-info">
+                                                <h6>{{ $t->title }}</h6>
+                                                <!--<p>Book Lovers</p>-->
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         @endforeach
                     </div>

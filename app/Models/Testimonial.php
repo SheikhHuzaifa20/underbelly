@@ -11,6 +11,6 @@ class Testimonial extends Model
 
     protected $table = 'testimonial';
     protected $primaryKey = 'id';
-    protected $fillable = ['title', 'description', 'rating', 'image', 'status', 'sort_order'];
+    protected $fillable = ['title', 'description', 'rating', 'link', 'image', 'status', 'sort_order'];
     protected $dates = ['deleted_at'];
 }
