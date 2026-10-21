@@ -56,7 +56,11 @@ class HomeController extends Controller
         $page = DB::table('pages')->where('id', 1)->first();
         $section = DB::table('sections')->where('page_id', 1)->get();
         $banner = DB::table('banners')->where('status', 1)->where('id', 1)->first();
-        $testimonial = DB::table('testimonial')->where('status', 1)->get();
+        $testimonial = \App\Models\Testimonial::where('status', 1)
+            ->orderByDesc('is_featured')
+            ->orderBy('sort_order')
+            ->limit(3)
+            ->get();
         $product = \App\Models\Product::with(['images', 'primaryImage', 'galleryImages'])->where('status', 1)->get();
 
         return view('welcome', compact('page', 'banner', 'section', 'testimonial','product'));

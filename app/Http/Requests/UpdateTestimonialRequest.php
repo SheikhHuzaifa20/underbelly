@@ -19,6 +19,7 @@ class UpdateTestimonialRequest extends FormRequest
             'description' => 'nullable|string',
             'rating' => 'nullable|integer|min:1|max:5',
             'link' => 'nullable|string|max:500',
+            'is_featured' => 'required|boolean',
         ];
     }
 }

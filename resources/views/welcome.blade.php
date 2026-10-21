@@ -215,7 +215,10 @@
                             <div class="item">
                                 <a
                                     href="{{ !empty($t->link) ? $t->link : 'javascript:void(0)' }}" {!! !empty($t->link) ? 'target="_blank"' : '' !!}>
-                                    <div class="testinomial-card">
+                                    <div class="testinomial-card {{ $t->is_featured ? 'is-featured' : '' }}">
+                                        @if ($t->is_featured)
+                                            <img class="featured-badge" src="{{ asset('asset/images/featured-star.svg') }}" alt="Featured testimonial">
+                                        @endif
                                         <h5 style="color: #ff754c;">
                                             @for ($i = 0; $i < $t->rating; $i++)
                                                 <i class="fa-solid fa-star"></i>

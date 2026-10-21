@@ -586,6 +586,7 @@ section.about {
 }
 
 .testinomial-card {
+    position: relative;
     width: 100%;
     padding: 27px 22px 55px;
     background: #505050;
@@ -593,6 +594,28 @@ section.about {
     text-align: center;
     transition: background-color 0.3s ease;
     height: 434px;
+}
+
+.testinomial-card.is-featured {
+    background: #fff;
+}
+
+.testinomial-card .featured-badge {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    left: auto !important;
+    width: 36px !important;
+    height: 36px !important;
+    margin: 0 !important;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.testinomial-card.is-featured p,
+.testinomial-card.is-featured .testinomial-info h6,
+.testinomial-card.is-featured .testinomial-info p {
+    color: #111;
 }
 
 .testinomial-card:hover {

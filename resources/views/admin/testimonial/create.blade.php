@@ -76,6 +76,13 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
+                                            <div class="form-group form-check">
+                                                <input type="hidden" name="is_featured" value="0">
+                                                <input type="checkbox" class="form-check-input" name="is_featured" id="is_featured" value="1" {{ old('is_featured') ? 'checked' : '' }}>
+                                                <label class="form-check-label" for="is_featured">Featured on homepage</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="summary-ckeditor">Testimonial Image</label>
                                                 <div class="upload-photo">

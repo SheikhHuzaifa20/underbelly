@@ -107,7 +107,7 @@
 
         var testimonialCount = $('.testinomial-slider .item').length;
         $('.testinomial-slider').owlCarousel({
-            loop: testimonialCount > 4 ? true : false,
+            loop: testimonialCount > 3,
             margin: 22,
             nav: false,
             dots: false,
@@ -126,7 +126,7 @@
                     items: 2
                 },
                 992: {
-                    items: 4
+                    items: 3
                 }
             }
         });
