@@ -213,11 +213,13 @@
                     <div class="owl-carousel owl-theme testinomial-slider">
                         @foreach ($testimonial as $t)
                             <div class="item">
-                                <a
-                                    href="{{ !empty($t->link) ? $t->link : 'javascript:void(0)' }}" {!! !empty($t->link) ? 'target="_blank"' : '' !!}>
+                                <a href="{{ !empty($t->link) ? $t->link : 'javascript:void(0)' }}"
+                                    {!! !empty($t->link) ? 'target="_blank"' : '' !!}>
                                     <div class="testinomial-card {{ $t->is_featured ? 'is-featured' : '' }}">
                                         @if ($t->is_featured)
-                                            <img class="featured-badge" src="{{ asset('asset/images/featured-star.svg') }}" alt="Featured testimonial">
+                                            <img class="featured-badge"
+                                                src="{{ asset('asset/images/featured-star.svg') }}"
+                                                alt="Featured testimonial">
                                         @endif
                                         <h5 style="color: #ff754c;">
                                             @for ($i = 0; $i < $t->rating; $i++)
@@ -226,7 +228,9 @@
                                         </h5>
                                         {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
                                 alt="5 stars"> --}}
-                                        {!! $t->description !!}
+                                        <div class="test-cont">
+                                            {!! $t->description !!}
+                                        </div>
                                         <div class="testinomial-profile">
                                             <img class="testinomial-avatar" src="{{ asset($t->image) }}"
                                                 alt="Angela Moss">
