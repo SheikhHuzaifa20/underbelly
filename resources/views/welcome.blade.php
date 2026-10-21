@@ -30,7 +30,7 @@
                     <div class="about-img">
                         <img class="img-fluid" src="{{ asset($page->image) }}" alt="About The Underbelly book">
                     </div>
-                    <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="about-content">
                         <h2 class="about-title">{{ $page->name }}</h2>
                         {!! $page->content !!}
                     </div>
