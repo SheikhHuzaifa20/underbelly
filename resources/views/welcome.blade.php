@@ -1,15 +1,9 @@
 @extends('layouts.main')
 @section('content')
-    <section class="hero-content">
-        <div class="vedio-nammer">
-            <video playsinline="playsinline" muted="muted" preload="yes" autoplay="autoplay" loop="loop"
-                id="vjs_video_739_html5_api" class="video-js" data-setup='{"autoplay":"any"}'>
-                <source src="{{ $banner->video }}" type="video/mp4">
-            </video>
-        </div>
+    <section class="hero-content home-hero">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12">
                     <div class="banner_content" data-aos="fade-up" data-aos-duration="1000">
                         <p class="eyebrow">{{ $banner->title }} </p>
                         {!! $banner->description !!}
@@ -18,13 +12,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6">
-
-                </div>
             </div>
         </div>
-
     </section>
+
+    <div class="home-banner-video">
+        <video playsinline="playsinline" muted="muted" preload="yes" autoplay="autoplay" loop="loop"
+            id="vjs_video_739_html5_api" class="video-js" data-setup='{"autoplay":"any"}'>
+            <source src="{{ $banner->video }}" type="video/mp4">
+        </video>
+    </div>
 
     <section class="about">
         <div class="container">
