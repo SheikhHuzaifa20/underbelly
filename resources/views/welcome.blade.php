@@ -158,7 +158,9 @@
                             <div class="col-lg-6">
                                 <div class="explore-more-content" data-aos="fade-left" data-aos-duration="1500">
                                     <h2>{{ $p->name }}</h2>
-                                    <p>{!! $p->description !!}</p>
+                                    <div class="explore-more-desc">
+                                        <p>{!! $p->description !!}</p>
+                                    </div>
                                     @if (!empty($p->link))
                                         <a href="{{ $p->link }}" target="_blank"><button class="explore-button"
                                                 type="button">Buy From Amazon</button></a>

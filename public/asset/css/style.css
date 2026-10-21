@@ -446,6 +446,32 @@ section.about {
     text-transform: uppercase;
 }
 
+.explore-more-desc {
+    max-height: 380px;
+    margin-bottom: 24px;
+    padding-right: 12px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-color: black rgba(255, 255, 255, 0.18);
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+}
+
+.explore-more-desc::-webkit-scrollbar {
+    width: 6px;
+}
+
+.explore-more-desc::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+}
+
+.explore-more-desc::-webkit-scrollbar-thumb {
+    background: #ff754c;
+    border-radius: 6px;
+}
+
 .explore-more-content p {
     width: 72%;
     margin: 0 0 28px;
@@ -527,6 +553,10 @@ section.about {
 
     .explore-background {
         height: 450px;
+    }
+
+    .explore-more-desc {
+        max-height: 300px;
     }
 }
 
