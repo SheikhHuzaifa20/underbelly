@@ -59,7 +59,6 @@ class HomeController extends Controller
         $testimonial = \App\Models\Testimonial::where('status', 1)
             ->orderByDesc('is_featured')
             ->orderBy('sort_order')
-            ->limit(3)
             ->get();
         $product = \App\Models\Product::with(['images', 'primaryImage', 'galleryImages'])->where('status', 1)->get();
 
