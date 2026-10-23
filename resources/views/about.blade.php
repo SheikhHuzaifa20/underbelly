@@ -69,7 +69,7 @@
         </div>
     </section>
 
-    <section class="testinomial">
+    {{-- <section class="testinomial">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
@@ -91,14 +91,11 @@
                                                 <i class="fa-solid fa-star"></i>
                                             @endfor
                                         </h5>
-                                        {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars"> --}}
                                         {!! $t->description !!}
                                         <div class="testinomial-profile">
                                             <img class="testinomial-avatar" src="{{ asset($t->image) }}" alt="Angela Moss">
                                             <div class="testinomial-info">
                                                 <h6>{{ $t->title }}</h6>
-                                                <!--<p>Book Lovers</p>-->
                                             </div>
                                         </div>
                                     </div>
@@ -109,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
 @section('css')
     <style>
