@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="{{ asset('asset/css/style.css') }}?v={{ filemtime(public_path('asset/css/style.css')) }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/responsive.css') }}?v={{ filemtime(public_path('asset/css/responsive.css')) }}">
 
     @include('layouts.front.css')
     @yield('css')

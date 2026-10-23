@@ -1,0 +1,472 @@
+@media(max-width:1199px) {
+    
+    .banner_title {
+    font-size: 80px;
+}
+
+.eyebrow {
+    font-size: 30px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.home-banner-video video {
+    height: 550px;
+}
+
+section.about {
+    padding: 50px;
+}
+
+.about-title {
+    font-size: 55px;
+}
+
+.about-description {
+    width: 100%;
+}
+
+.my-books-title {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.mySwiper2 .swiper-slide img {
+    width: 85% !important;
+}
+
+.book-content h3 {
+    font-size: 20px;
+    height: 60px;
+}
+
+.explore-more {
+    padding: 50px 0;
+}
+
+.my-books-title {
+    padding-top: 30px;
+}
+
+.explore-more-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.explore-more-content p {
+    width: 90%;
+    font-size: 15px;
+}
+
+.explore-more-book img {width: 200px !important;}
+
+.video-content iframe {
+    height: 600px !important;
+}
+
+.testinomial-heading {
+    margin-bottom: 30px;
+}
+
+.footer {
+    padding: 20px 50px;
+}
+
+.footer-policy {
+    margin-bottom: 20px;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.testinomial-card {
+    height: 350px;
+}
+
+.testinomial-card p {
+    font-size: 16px;
+}
+
+section.hero-content.about {
+    padding: 150px 0 50px 0;
+    height: unset;
+}
+
+
+.Blogtext {
+    padding-left: 25px;
+}
+
+.Blogtext h6 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.Blogtext p {
+    font-size: 15px;
+}
+
+.Blogtext span {
+    font-size: 15px;
+}
+
+.archieve-item li {
+    padding: 1rem 0.6rem;
+}
+
+
+.Blogtext h2 {
+    font-size: 30px;
+}
+
+.privacy-content p {
+    font-size: 16px;
+}
+
+.privacy-content h3 {
+    font-size: 25px;
+}
+
+}
+
+@media(max-width:991px) {
+    
+    a.logo img {
+    width: 180px;
+}
+
+.hero-content.home-hero {
+    min-height: unset;
+    padding: 120px 0 80px;
+}
+
+.eyebrow {
+    font-size: 25px;
+}
+
+.banner_title {
+    font-size: 60px;
+}
+
+.home-banner-video video {
+    height: 400px;
+}
+
+section.about {
+    padding: 50px 0;
+}
+
+section.explore-more {
+    padding-top: 0;
+}
+
+.about-img img {
+    height: 75px;
+    width: 85%;
+}
+
+.about-title {
+    font-size: 50px;
+}
+
+.explore-more-content h2 {font-size: 25px;line-height: unset;}
+
+.explore-more-desc {
+    max-height: 250px;
+}
+
+.explore-more-content p {
+    width: 100%;
+    line-height: unset;
+}
+
+.explore-more-image img {
+    height: 420px;
+}
+
+.explore-more-book img {
+    width: 160px !important;
+}
+
+.explore-main {
+    padding: 0;
+}
+
+.explore-button {
+    height: 35px;
+    width: 122px;
+    font-size: 12px;
+}
+
+.books-slider1 .owl-nav button {width: 25px;height: 25px;font-size: 20px !important;}
+
+    
+    .video-content iframe {
+    height: 500px !important;
+}
+
+.blogImage img {
+    width: 200px;
+}
+
+.Blogtext {
+    padding: 15px;
+}
+
+.Blogtext a {
+    font-size: 15px;
+}
+
+.Blogtext h6 {
+    font-size: 15px;
+}
+
+.Blogtext p {
+    margin-bottom: 10px;
+}
+
+.customh2 {
+    font-size: 15px;
+}
+
+.archieve-item a {
+    font-size: 13px;
+    line-height: unset;
+}
+
+
+.Blogtext h2 {
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+
+}
+
+
+@media(max-width:767px) {
+
+.eyebrow {
+    font-size: 20px;
+}
+
+.banner_title {
+    font-size: 50px;
+}
+
+.hero-content.home-hero {
+    padding-bottom: 45px;
+}
+
+.home-banner-video video {
+    height: 320px;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-title {
+    font-size: 35px;
+    margin: 0;
+}
+
+.about-description {
+    margin: 10px 0;
+}
+
+section.about {
+    padding-bottom: 0;
+}
+
+.my-books-title {
+    font-size: 40px;
+}
+
+.mySwiper2 .swiper-slide img {
+    width: 100%;
+}
+
+.video-content iframe {
+    height: 350px !important;
+}
+
+.testinomial-heading h2 {
+    font-size: 50px;
+}
+
+section.testinomial {
+    padding-top: 30px;
+}
+
+.explore-more-image img {
+    height: 340px !important;
+}
+
+.explore-more-content h2 {
+    font-size: 20px;
+}
+
+.explore-more-content p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+section.hero-content.about {
+    padding-bottom: 20px;
+    padding-top: 120px;
+}
+
+section.hero-content.about .banner_content {
+    text-align: center;
+}
+
+
+.Blogtext {
+    padding-top: 0;
+}
+
+.BlogContent {
+    padding-bottom: 20px;
+}
+
+section.BlogMain {
+    padding-top: 1.5rem;
+}
+
+.HeadingText h5 {
+    padding-bottom: 15px;
+}
+
+}
+
+
+
+@media(max-width:575px) {
+    
+   a.logo img {
+    width: 90px;
+}
+
+.nav {
+    gap: 12px;
+    margin: 0;
+}
+
+.header-icon {
+    height: 25px;
+}
+
+.hero-content.home-hero {
+    padding-top: 100px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.banner_title {
+    font-size: 45px;
+}
+
+.home-banner-video video {
+    height: 300px;
+}
+
+.my-books-title {
+    font-size: 30px;
+}
+
+.explore-more-image img {
+    height: 260px !important;
+}
+
+.explore-more-book img {
+    width: 100px !important;
+}
+
+.video-content iframe {
+    height: 250px !important;
+} 
+
+.testinomial-heading h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.footer {
+    padding: 10px;
+}
+
+.footer-content h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-intro {
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+    
+    .footer-form {
+    width: 100%;
+}
+
+.footer a {
+    font-size: 15px;
+}
+
+.footer-social a {
+    font-size: 30px;
+}
+.BlogContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.Blogtext h6 {
+    text-align: center;
+    width: 100%;
+}
+
+.Blogtext {
+}
+
+.BlogTAbs {
+    justify-content: center;
+}
+
+.archieve {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blogImage {
+    text-align: center;
+}
+
+.Blogtext {
+    text-align: center;
+}
+
+.Blogtext h2 {
+    font-size: 22px;
+}
+
+.privacy-content {
+    text-align: center;
+}
+
+.privacy-content h3 {
+    font-size: 20px;
+}
+
+.privacy-content p {
+    font-size: 14px;
+}
+
+}

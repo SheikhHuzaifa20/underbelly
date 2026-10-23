@@ -26,7 +26,7 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="about-img">
                         <img class="img-fluid" src="{{ asset($page->image) }}" alt="About The Underbelly book">
                     </div>
@@ -42,14 +42,14 @@
     <section class="my-books-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <h2 class="my-books-title  animate__animated animate__bounce animate__infinite animate__slow">
                         {{ $section[0]->value }}
                     </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="owl-carousel owl-theme books-slider">
                         @foreach ($product as $p)
                             @php
@@ -133,7 +133,7 @@
     <section class="explore-more">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 col-12">
                     <h2 class="my-books-title  animate__animated animate__bounce animate__infinite animate__slow">
                         {{ $section[1]->value }}</h2>
                 </div>
@@ -142,7 +142,7 @@
                 @foreach ($product as $p)
                     <div class="item">
                         <div class="row align-items-center">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6 col-6">
                                 <div class="explore-main">
                                     <div class="explore-more-image">
                                         <img class="img-fluid explore-background"
@@ -155,7 +155,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6 col-6">
                                 <div class="explore-more-content" data-aos="fade-left" data-aos-duration="1500">
                                     <h2>{{ $p->name }}</h2>
                                     <div class="explore-more-desc">
@@ -186,7 +186,7 @@
     <section class="video-section" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container-fluid p-0">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="video-content">
                         {{-- <img class="img-fluid" src="{{ asset('asset/images/video_section.png') }}" alt=""> --}}
                         <iframe width="560" height="315" src="{{ $section[2]->value }}"
@@ -202,7 +202,7 @@
     <section class="testinomial">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="testinomial-heading">
                         <h2 class=" animate__animated animate__bounce animate__infinite animate__slow">
                             {{ $section[3]->value }}</h2>
@@ -211,7 +211,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="owl-carousel owl-theme testinomial-slider">
                         @foreach ($testimonial as $t)
                             <div class="item">

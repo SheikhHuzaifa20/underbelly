@@ -4,7 +4,7 @@
 
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="banner_content" data-aos="fade-up" data-aos-duration="1000">
 
                         <h1 class="banner_title ml2">blogs
@@ -12,7 +12,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12">
 
                 </div>
             </div>
@@ -24,7 +24,7 @@
     <section class="BlogMain">
         <div class="container">
             <div class="row">
-                <div class="col-md-9">
+                <div class="col-lg-9 col-md-9 col-12">
                     <div class="BlogTAbs">
                         <div class="HeadingText">
                             <h5>Latest blogs</h5>
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-md-3 col-12">
                     <div class="sideright">
                         <div class="archieve">
                             <h2 class="customh2">CATEGORIES</h2>

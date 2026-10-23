@@ -10,11 +10,11 @@
 <main class="hero">
     <header class="site-header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 col-3">
                     <a class="logo" href="{{route('home')}}"><img src="{{ asset($logo->img_path) }}"></a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-9">
                     <div class="header-right">
                         <nav class="nav" aria-label="Primary navigation">
                             <a href="{{route('home')}}">Home</a>

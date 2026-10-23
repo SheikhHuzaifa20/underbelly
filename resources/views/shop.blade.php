@@ -4,14 +4,14 @@
 
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="banner_content" data-aos="fade-up" data-aos-duration="1000">
 
                         <h1 class="banner_title ml2">Shop</h1>
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12">
 
                 </div>
             </div>
@@ -22,13 +22,13 @@
     <section class="my-books-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <h2 class="my-books-title  animate__animated animate__bounce animate__infinite animate__slow">My Books
                     </h2>
                 </div>
             </div>
             <div class="row">
-                {{-- <div class="col-lg-12">
+                {{-- <div class="col-lg-12 col-md-12 col-12">
                     <div class="owl-carousel owl-theme books-slider">
                         <div class="item">
                             <div class="book-card">
@@ -354,7 +354,7 @@
                     <!--</div>-->
                 </div>
                 @else
-                <div class="col-lg-12 text-center" style="padding: 50px 0;">
+                <div class="col-lg-12 col-md-12 col-12 text-center" style="padding: 50px 0;">
                     <h3 style="color: #fff;">Product Not Found</h3>
                     <p style="color: #ccc;">Sorry, we couldn't find any product matching your search.</p>
                 </div>

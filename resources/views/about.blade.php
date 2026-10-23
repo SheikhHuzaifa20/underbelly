@@ -3,14 +3,14 @@
     <section class="hero-content about">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div class="banner_content" data-aos="fade-up" data-aos-duration="1000">
 
                         <h1 class="banner_title ml2">{{ $page->page_name }}</h1>
 
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6 col-12">
 
                 </div>
             </div>
@@ -21,7 +21,7 @@
     <section class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="about-img">
                         <img class="img-fluid" src="{{ $page->image }}" alt="About The Underbelly book">
                     </div>
@@ -56,7 +56,7 @@
     <section class="video-section" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container-fluid p-0">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="video-content">
                         <iframe width="560" height="315"
                             src="{{$section[0]->value}}"
@@ -72,7 +72,7 @@
     <section class="testinomial">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="testinomial-heading">
                         <h2 class=" animate__animated animate__bounce animate__infinite animate__slow">Testimonials</h2>
                         <p>Readers Reviews & Feedbacks</p>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 col-md-12 col-12">
                     <div class="owl-carousel owl-theme testinomial-slider">
                         @foreach ($testimonial as $t)
                             <div class="item">
