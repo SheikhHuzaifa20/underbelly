@@ -473,7 +473,7 @@ section.about {
 }
 
 .explore-more-content p {
-    width: 72%;
+    width: 100%;
     margin: 0 0 28px;
     color: var(--white);
     font-family: "Manrope", sans-serif;
