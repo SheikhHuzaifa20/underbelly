@@ -186,79 +186,6 @@ a.logo img {
     animation: floatingimg 2.5s ease-in-out infinite;
 }
 
-@media (max-width: 991px) {
-    .site-header .col-lg-6:last-child {
-        justify-content: flex-start;
-        margin-top: 18px;
-        padding-right: 12px;
-    }
-
-    .hero-content {
-        padding-top: 100px;
-    }
-
-    .site-header .col-lg-6:first-child,
-    .hero-content .col-lg-6:first-child {
-        padding-left: 12px;
-    }
-
-    .banner_content {
-        margin-top: 0;
-    }
-
-    .book-image {
-        width: min(900px, 100vw);
-        margin-top: 35px;
-        margin-left: -8vw;
-    }
-}
-
-@media (max-width: 575px) {
-    .logo {
-        font-size: 42px;
-    }
-
-    .site-header .col-lg-6:last-child {
-        margin-top: 14px;
-    }
-
-    .nav {
-        display: none;
-    }
-
-    .header-right {
-        gap: 7px;
-    }
-
-    .header-icon {
-        width: 32px;
-        height: 32px;
-    }
-
-    .hero-content {
-        padding-top: 120px;
-    }
-
-    .eyebrow {
-        font-size: 27px;
-    }
-
-    .banner_title {
-        font-size: clamp(56px, 15vw, 86px);
-    }
-
-    .description {
-        max-width: 270px;
-        font-size: 14px;
-    }
-
-    .book-image {
-        width: 135vw;
-        margin-top: 35px;
-        margin-left: -42vw;
-    }
-}
-
 /* ============ about-section ================ */
 section.about {
     background: black;
@@ -380,23 +307,6 @@ section.about {
 
 .books-slider .book-card {
     width: 100%;
-}
-
-@media (max-width: 767px) {
-    .my-books-title {
-        font-size: 48px;
-        margin-bottom: 30px;
-    }
-
-    .book-card img {
-        height: 300px;
-    }
-
-    .book-card h3,
-    .book-card p,
-    .book-card button {
-        margin-left: 15px;
-    }
 }
 
 /* ============ Book-section ================ */
@@ -526,39 +436,6 @@ section.about {
     }
 }
 
-@media (max-width: 991px) {
-    .explore-more-content {
-        padding: 50px 0 0;
-    }
-
-    .explore-more-content p {
-        width: auto;
-    }
-}
-
-@media (max-width: 575px) {
-    .explore-more {
-        padding: 50px 0;
-    }
-
-    .explore-more-content h2 {
-        font-size: 40px;
-    }
-
-    .explore-more-book {
-        right: -18px;
-        bottom: -18px;
-        width: 84%;
-    }
-
-    .explore-background {
-        height: 450px;
-    }
-
-    .explore-more-desc {
-        max-height: 300px;
-    }
-}
 
 .explore-more-image {
     overflow: hidden;
@@ -727,28 +604,6 @@ section.about {
     line-height: 1.2;
 }
 
-@media (max-width: 767px) {
-    .testinomial {
-        padding: 50px 0;
-    }
-
-    .testinomial-heading {
-        margin-bottom: 35px;
-    }
-
-    .testinomial-heading h2 {
-        font-size: 48px;
-    }
-
-    .testinomial-heading p br {
-        display: none;
-    }
-
-    .testinomial-card {
-        padding: 25px 20px 22px;
-    }
-}
-
 /* ============ Testinomial-section ================ */
 
 /* ============ Footer-section ================ */
@@ -878,29 +733,6 @@ section.about {
     color: var(--white);
     font-family: "Manrope", sans-serif;
     font-size: 14px;
-}
-
-@media (max-width: 575px) {
-    .footer {
-        padding: 50px 0 25px;
-    }
-
-    .footer-form {
-        width: 100%;
-    }
-
-    .footer-intro {
-        margin-bottom: 35px;
-    }
-
-    .footer-policy {
-        margin-bottom: 45px;
-    }
-
-    .footer-links {
-        padding: 0 15px;
-        line-height: 1.8;
-    }
 }
 
 /* ============ Footer-section ================ */
