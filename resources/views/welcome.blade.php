@@ -199,7 +199,7 @@
         </div>
     </section>
 
-    <section class="testinomial">
+    {{-- <section class="testinomial">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -228,8 +228,6 @@
                                                 <i class="fa-solid fa-star"></i>
                                             @endfor
                                         </h5>
-                                        {{-- <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                alt="5 stars"> --}}
                                         <div class="test-cont">
                                             {!! $t->description !!}
                                         </div>
@@ -238,123 +236,17 @@
                                                 alt="Angela Moss">
                                             <div class="testinomial-info">
                                                 <h6>{{ $t->title }}</h6>
-                                                <!--<p>Book Lovers</p>-->
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         @endforeach
-                        {{-- <div class="item">
-                            <div class="testinomial-card">
-                                <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars">
-                                <p>Manitoulin Memories took me straight back to my own childhood summers. Reeves writes
-                                    about memory and loss with such tenderness that I found myself smiling and aching at the
-                                    same time. A quiet, beautiful collection that lingers long after you finish.</p>
-                                <div class="testinomial-profile">
-                                    <img class="testinomial-avatar" src="{{ asset('asset/images/testinomial-img.png') }}"
-                                        alt="Angela Moss">
-                                    <div class="testinomial-info">
-                                        <h6>Ottoline Farraday</h6>
-                                        <!--<p>Book Lovers</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testinomial-card">
-                                <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars">
-                                <p>Bucceroni is one of the most entertaining characters in crime fiction. This book is fast,
-                                    funny, and full of surprises. Every time I thought I knew where it was going, Reeves
-                                    pulled the rug out. Pure Brooklyn from start to finish.</p>
-                                <div class="testinomial-profile">
-                                    <img class="testinomial-avatar" src="{{ asset('asset/images/testinomial-img.png') }}"
-                                        alt="Angela Moss">
-                                    <div class="testinomial-info">
-                                        <h6>Thaddeus Okonkwo</h6>
-                                        <!--<p>Book Lovers</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testinomial-card">
-                                <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars">
-                                <p>The Blonde with Half a Face is a gripping neo-noir that grabbed me from the first
-                                    chapter. Candy is a fierce, complicated heroine, and her fight for revenge is impossible
-                                    to look away from. Reeves balances grit and heart in a way few writers manage.</p>
-                                <div class="testinomial-profile">
-                                    <img class="testinomial-avatar" src="{{ asset('asset/images/testinomial-img.png') }}"
-                                        alt="Angela Moss">
-                                    <div class="testinomial-info">
-                                        <h6>Seraphina Delacroix</h6>
-                                        <!--<p>Book Lovers</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testinomial-card">
-                                <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars">
-                                <p>A hard-boiled thriller with heart. Richie's grief gives the story real stakes, and the
-                                    action never lets up. Reeves blends violence, dark humor, and genuine emotion in a way
-                                    that kept me hooked from the first page.</p>
-                                <div class="testinomial-profile">
-                                    <img class="testinomial-avatar" src="{{ asset('asset/images/testinomial-img.png') }}"
-                                        alt="Angela Moss">
-                                    <div class="testinomial-info">
-                                        <h6>Alistair Brenner</h6>
-                                        <!--<p>Book Lovers</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testinomial-card">
-                                <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars">
-                                <p>The suspense had me flipping pages late into the night. Watching Richie become the prime
-                                    suspect in his own investigation was brilliant. Add Candy back into the mix, and you
-                                    have a thriller that truly delivers on every level.</p>
-                                <div class="testinomial-profile">
-                                    <img class="testinomial-avatar" src="{{ asset('asset/images/testinomial-img.png') }}"
-                                        alt="Angela Moss">
-                                    <div class="testinomial-info">
-                                        <h6>Dashiell Voronova</h6>
-                                        <!--<p>Book Lovers</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testinomial-card">
-                                <img class="testinomial-stars" src="{{ asset('asset/images/star-img.png') }}"
-                                    alt="5 stars">
-                                <p>As a parent, Why NOT Go to College? made me stop and reconsider everything I assumed
-                                    about college. Reeves is provocative, funny, and refreshingly direct. It does not
-                                    lecture. It challenges. I have already passed my copy to three friends.</p>
-                                <div class="testinomial-profile">
-                                    <img class="testinomial-avatar" src="{{ asset('asset/images/testinomial-img.png') }}"
-                                        alt="Angela Moss">
-                                    <div class="testinomial-info">
-                                        <h6>Cressida Halloran</h6>
-                                        <!--<p>Book Lovers</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection
 @section('css')
     <style>
